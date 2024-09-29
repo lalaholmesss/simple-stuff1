@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
-   
-    <style>
-    body{
-  padding: 25px;
-  text-align: center;
-  font-size: 40px;
-}
-
-button {
-  padding: 20px;
-  margin: 0;
-  border: none;
-  background-color: pink;
-  border-radius: 10px;
-  font-size: 20px;
-  transition: background-color 0.5s;
-}
-button:hover {
-  background-color: #ffdbdf;
-}
+    <title>Click Counter</title>
+     <style>
+        body{
+          padding: 25px;
+          text-align: center;
+          font-size: 40px;
+        }
+  
+        button {
+        padding: 20px;
+        margin: 0;
+        border: none;
+        background-color: pink;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.5s;
+        }
+        button:hover {
+        background-color: #ffdbdf;
+        }
     </style>
   </head>
-    
   <body>
       <label id="count">0</label>
       <br />
@@ -33,26 +31,28 @@ button:hover {
       <button id="increase" >increase</button>
       
       
-      <script>let decrease = document.getElementById("decrease");
-let reset = document.getElementById("reset")
-let increase = document.getElementById("increase");
-let count = document.getElementById("count");
+      <script>
+        let decrease = document.getElementById("decrease");
+        let reset = document.getElementById("reset")
+        let increase = document.getElementById("increase");
+        let count = document.getElementById("count");
+      
+        let countCounter = 0;
 
-let countCounter = 0;
-
-decrease.onclick = function (){
-  countCounter--;
-  count.textContent = countCounter;
-}
-
-reset.onclick = function(){
-  countCounter = 0;
-  count.textContent = countCounter;
-}
-
-increase.onclick = function(){
-  countCounter++;
-  count.textContent = countCounter;
-}</script>
+        decrease.onclick = function (){
+          countCounter--;
+          count.textContent = countCounter;
+        }
+        
+        reset.onclick = function(){
+          countCounter = 0;
+          count.textContent = countCounter;
+        }
+        
+        increase.onclick = function(){
+          countCounter++;
+          count.textContent = countCounter;
+        }
+        </script>
   </body>
 </html>
