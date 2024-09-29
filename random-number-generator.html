@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Generator</title>
+    <style>
+      body{
+        padding: 25px;
+        text-align: center;
+        font-size: 40px;
+      }
+  
+      button {
+        padding: 20px;
+        margin: 0;
+        border: none;
+        background-color: pink;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+    
+  <body>
+      <label id="randomNum">0</label>
+      <br />
+      <button id="roll">Roll</button>
+
+      
+      
+      <script>
+        const roll = document.getElementById("roll");
+        let Num = document.getElementById("randomNum")
+        
+        
+        roll.onclick = function(){
+          randomNumber = Math.floor(Math.random() * 100) + 1;
+          Num.textContent = randomNumber;
+        }
+
+      </script>
+  </body>
+</html>
